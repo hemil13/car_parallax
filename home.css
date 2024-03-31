@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;   
+}
+
+body{
+    background: url(background1.jpeg) no-repeat ;
+    background-size: cover;
+    background-position: center;
+}
+
+.wlc{
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+    font-size: 35px;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 100px;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+    border-bottom: 3px solid rgba(255, 255, 255, .2);
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent, rgba(255,255,255,.4), transparent) ;
+    transition: 0.5s;
+}
+
+.header:hover::before{
+    left: 100%;
+}
+
+.navbar a{
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    color: turquoise;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery{
+    display: flex;
+    align-items: center;
+
+}
+
+.img-box{
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    position: relative;
+    transition: width 0.5s;
+}
+
+.img-box1{
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    position: relative;
+    transition: width 0.5s;
+    background: url(Defender_logo.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box2{
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    position: relative;
+    transition: width 0.5s;
+    background: url(Porsche_911_logo.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box3{
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    position: relative;
+    transition: width 0.5s;
+    background: url(bmw_m5_logo.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box4{
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    position: relative;
+    transition: width 0.5s;
+    background: url(Mitsubishi_Lancer_EVO_logo.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box5{
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    position: relative;
+    transition: width 0.5s;
+    background: url(rolls_ghost_logo.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box h3{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    text-align: center;
+    transition: bottom 0.5s, opacity 0.5s, text-align 0.1s;
+}
+
+.img-box:hover{
+    width: 300px;
+    cursor: pointer;
+}
+
+.img-box:hover h3{
+    opacity: 1;
+    bottom: 25px;
+    text-align: center;
+}
+
